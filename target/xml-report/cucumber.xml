@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="18.663" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="User will test the url of the web sites" name="TC01 Test that The url of website include its name" time="18.054">
+<testsuite name="Cucumber" time="21.568" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="US1006 user should be able to login with validinfo" name="TC01 Login test with valid user name and password" time="20.669">
 <system-out><![CDATA[
-Given user goes to "amazon_url" homepage....................................passed
-And test that the the url of the website include its name "amazon"..........passed
-Then close the browser......................................................passed
+Given user goes to "Test_automation_Url" homepage...........................passed
+When User clicks on PRACTICE................................................passed
+And User clicks on Test Login Page..........................................passed
+And User clicks on UserNameBox..............................................passed
+And User type into username "student".......................................passed
+And User clicks on Password.................................................passed
+And User type into password "Password123"...................................passed
+When User clicks on SubmitButton............................................passed
+Then Assert that login is successful........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
