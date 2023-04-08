@@ -55,14 +55,14 @@ public class AmazonStepDefinitions {
 
     @When("user serach for {string} in search box")
     public void userSerachForInSearchBox(String arg0) {
-
+        amazonHomePage = new AmazonHomePage();
         amazonHomePage.amazonSearchBox.sendKeys(arg0+Keys.ENTER);
 
     }
 
     @And("test that results include {string} word")
     public void testThatResultsIncludeWord(String arg0) {
-
+        amazonHomePage = new AmazonHomePage();
         String actualData = amazonHomePage.amazonSearchResults.getText();
 
         assertTrue(actualData.contains(arg0));

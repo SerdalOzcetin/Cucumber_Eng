@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
 
         features = "./src/test/resources/features",            //features folder path
         glue = {"stepdefinitions",},                   // stepdefinition path
-        tags = "@MultySearch",
+        tags = "@Wip",
         dryRun = false
 
 )
