@@ -15,4 +15,7 @@ public class AmazonHomePage {
     @FindBy(id = "twotabsearchtextbox")
     public WebElement amazonSearchBox;
 
+    @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small'][1]")
+    public WebElement amazonSearchResults;
+
 }

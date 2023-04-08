@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="27.086" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="User will test in amazon" name="TC01 User search for iPhone in amazon" time="26.492">
+<testsuite name="Cucumber" time="26.117" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="User will test in amazon by using multysearch" name="TC02 User should be able to search for more produscts and test them." time="25.418">
 <system-out><![CDATA[
-Given user goes to amazon homepage..........................................passed
-When user serach for iPhone in search box...................................passed
-And test that results include iPhone word...................................passed
+Given user goes to "amazon_url" homepage....................................passed
+When user serach for "Samsung" in search box................................passed
+And test that results include "Samsung" word................................passed
 Then close the browser......................................................passed
 ]]></system-out>
 </testcase>
