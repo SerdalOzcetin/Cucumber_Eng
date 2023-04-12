@@ -12,21 +12,20 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-reports.html",
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-report/cucumber.xml",
-                "rerun:target/failed_scenarios.txt",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                "rerun:target/failed_scenarios.txt"
         },
 
         monochrome = true,
 
-        features = "./src/test/resources/features",            //features folder path
+        features = "@target/failed_scenarios.txt",            //features folder path
         glue = {"stepdefinitions","hooks"},                   // stepdefinition path
-        tags = "@Outline",
+        // tags = "@failed_scenario",
         dryRun = false
 
 )
-public class Runner {
+public class FailedRunner {
 
-        // Thic class is used to run the Test cases
-        // and configurations
+    // Thic class is used to run the Test cases
+    // and configurations
 
 }

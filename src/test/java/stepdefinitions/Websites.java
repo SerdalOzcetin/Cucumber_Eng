@@ -1,6 +1,7 @@
 package stepdefinitions;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import utilities.Driver;
 
@@ -16,5 +17,9 @@ public class Websites {
     }
 
 
+    @Then("User close the browser")
+    public void userCloseTheBrowser() {
 
+        Driver.closeDriver();
+    }
 }
